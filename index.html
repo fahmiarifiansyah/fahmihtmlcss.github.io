@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+      body {
+        background-image: url("image/honey.svg");
+        background-attachment: fixed;
+      }
+
+      section {
+        padding-top: 5rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 3px;
+        background-color: transparent;
+        color: white;
+      }
+
+      input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="w3-bar w3-border w3-white;">
+      <a href="#home" class="w3-bar-item w3-button w3-hover-blue w3-text-white w3-hover-text-white w3-black"><b>Home</b></a>
+      <a href="#tier" class="w3-bar-item w3-button w3-hover-blue w3-text-white w3-hover-text-white w3-black"><b>Tier</b></a>
+      <a href="#akun" class="w3-bar-item w3-button w3-hover-blue w3-text-white w3-hover-text-white w3-black"><b>My ML Account</b></a>
+    </div>
+    <!-- Akhir NavBar -->
+
+    <!-- SideBar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-hover-black" style="display: none" id="mySidebar">
+      <button onclick="w3_close()" class="w3-bar-item w3-large">Tutup &times;</button>
+      <a href="#home" class="w3-bar-item w3-button w3-hover-green">Hero</a>
+      <a href="#tier" class="w3-bar-item w3-button w3-hover-blue">Tier</a>
+      <a href="#akun" class="w3-bar-item w3-button w3-hover-red">My ML Account</a>
+    </div>
+
+    <div id="main">
+      <div class="w3-teal">
+        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      </div>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = "none";
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+    </script>
+    <!-- Akhir SideBar -->
+
+    <!-- Home -->
+    <section id="home">
+      <h1 style="font-size: 60px; color: white" align="center"><b>Mobile Legends : Bang Bang</b></h1>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b
+          >Mobile Legends adalah permainan MOBA yang dirancang untuk ponsel. Kedua tim masing-masing berisi lima orang berjuang untuk mencapai dan menghancurkan markas musuh sambil mempertahankan markas mereka sendiri untuk mengendalikan
+          tiga jalur, yang dikenal sebagai jalur "atas", "tengah" dan "bawah", yang menghubung ke setiap markas.</b
+        >
+      </p>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b
+          >Di masing-masing tim, ada lima pemain yang mengendalikan avatar sendiri-sendiri, yang dikenal sebagai "hero", dari perangkat mereka sendiri. Karakter lemah yang dikendalikan komputer disebut "minion", yang bersarang di markas tim
+          lalu menyebar ke tiga jalur dan melawan menara serta lawan yang menghadang. Mengumpulkan EXP berguna untuk menaikkan level hero saat permainan berlangsung.</b
+        >
+      </p>
+      <center>
+        <img src="image/playstore.png" width="200" alt="" />
+      </center>
+      <p align="center" style="font-size: 20px; color: white">
+        <b>Kamu dapat mengunduhnya melalui playstore dengan klik saja <a href="https://play.google.com/store/apps/details?id=com.mobile.legends" style="color: white">Download Mobile Legends</b></a>
+      </p>
+    </section>
+    <!-- Akhir Home -->
+
+    <!-- Tier -->
+    <section id="tier">
+      <h2 align="center" style="color: white; border: 5px solid white"><b>Tier Mobile Legends</b></h2>
+      <center>
+        <img src="image/rank.png" width="500" align="center" alt="" />
+      </center>
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>1. WARRIOR</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Warrior adalah tingkatan Mobile Legends pertama yang ada di mode Ranked Match. Rank Warrior ML memiliki tingkatan mulai dari Warrior III hingga Warrior I dengan tiga bintang untuk naik ke rank berikutnya. Saat Mobile Legends rank
+          reset, kamu yang masih di Mobile Legends tier ini akan mendapatkan hadiah berupa 1x Fragment Skin Premium, 1000 Battle Point, dan 100 Ticket.</b>
+      </p>
+      <br />
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>2. ELITE</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Setelah sukses menaikkan pangkat ML dari tier Warrior, kamu akan bermain di tingkatan Elite. Sama seperti sebelumnya, kamu akan mendapatkan tiga tingkatan mulai dari Elite III - Elite I. Kamu harus mengumpulkan 4 bintang untuk
+          bisa naik ke rank berikutnya. Nah, mulai rank ini jika kalah maka bintang kamu akan berkurang, geng. Setelah menyelesaikan season di urutan rank Elite Mobile Legend ini, kamu akan mendapatkan 3x Fragment Skin Premium, 2000 Battle
+          Point, dan 200 Ticket.</b>
+      </p>
+      <br />
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>3. MASTER</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Kemudian pada rank Master mungkin kamu bakal kesulitan mendapatkan bintang karena rata-rata pertandingan bakal diikuti oleh pemain asli, bukan melawan bot seperti pada Warrior dan Elite. Urutan rank Master Mobile Legend sendiri
+          memiliki empat buah tingkatan, yakni Master IV - Master I dengan masing-masing 4 bintang di tiap tier-nya. Untuk kamu yang berhasil mencapai rank di Mobile Legends yang satu ini, kamu berhak mendapatkan Skin Eksklusif Season, 4000
+          Battle Point, dan 300 Ticket.</b>
+      </p>
+      <br />
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>4. GRANDMASTER</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Pada rank Grandmaster kamu bakal menemui lima tingkatan mulai dari Grandmaster V - Grandmaster I. Bahkan, untuk bisa naik ke tier berikutnya, ada 5 bintang alias kemenangan yang harus kamu raih lebih dulu. Hadiah yang diberikan
+          di rank Grandmaster pun cukup menggiurkan, yakni Skin Eksklusif Season, 7000 Battle Point, dan 600 Ticket.</b>
+      </p>
+      <br />
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>5. EPIC</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Mulai dari rank Epic, kamu akan memulai sistem Draft Pick di mana pilihan setiap hero akan diatur sebelum memulai pertandingan. Dengan sistem ini, kedua tim tidak akan memiliki hero yang sama dan bakal ada empat hero yang
+          di-banned dalam setiap pertandingannya, geng. Rank Epic terdiri dari lima buah tingkatan, yakni Epic V - Epic I dengan lima buah bintang pada tiap tier-nya. Pada akhir musim, kamu akan mendapatkan Skin Eksklusif Season, 12000
+          Battle Point, dan 1000 Ticket.</b>
+      </p>
+      <br />
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>6. LEGEND</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Rank Legend menempati urutan ketiga rank tertinggi di Mobile Legends. Di tier ML ini, kamu harus melewati Legend V - Legend I dengan lima bintang masing-masing. Karena sudah masuk tingkatan rank ML yang lebih profesional, musuh
+          yang kamu temui pun dijamin sudah jago. Di akhir season, ada hadiah yang bakal kamu dapat saat mencapai rank ini, yakni Skin Eksklusif Season, 20000 Battle Point, dan 1500 Ticket.</b>
+      </p>
+      <br />
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>7. MYTHIC</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Pada tier ini, ada tingkatan yang harus kamu lewati, yakni Mythic V - Mythic I. Sistem penilaiannya pun bukan menggunakan bintang, melainkan poin bernama Mythic Point yang bakal bertambah dan berkurang tergantung menang atau
+          kalahnya kamu dalam pertandingan. Saat pertama kali kamu mencapai rank Mobile Legends ML ini pun, kamu bakal dihadapkan pada Placement Match yang terdiri dari 10 pertandingan untuk menentukan posisi kamu di rank Mythic. Nantinya,
+          saat bermain di mode rank, bukan nggak mungkin kamu akan sering bertemu dengan dengan pro player dengan nama squad keren yang sudah cukup populer. Pada akhir musim di rank Mobile Legends Mtyhic, kamu akan mendapatkan Skin Ekslusif
+          Season, Expression Mythic, 20000 Battle Point, dan 1500 Ticket.</b>
+      </p>
+      <br />
+      <h3 style="font-size: 30px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-left: 1rem"><b>8. MYTHICAL GLORY</b></h3>
+      <p style="font-size: 20px; color: white; padding-left: 1rem">
+        <b>Terakhir, kamu juga bisa meningkatkan lagi menjadi Mythical Glory Mobile Legends yang kini bisa kamu dapatkan dengan mudah asal total Mythic Point kamu sudah mencapai 600 poin atau lebih. Biar makin keren, jangan lupa untuk
+          meningkatkan Win Rate hero ML! Jadi saat draft pick, kamu bisa pamer WR kamu pada teman satu tim. Kerennya lagi, kamu pun juga berkesempatan masuk ke dalam leaderboard asal punya jumlah Mythic Point lebih besar dari pesaingmu.</b>
+      </p>
+    </section>
+    <!-- Akhir Tier -->
+
+    <!-- My Profile Account -->
+    <section id="akun">
+      <h2 align="center" style="color: white; border: 5px solid white"><b>My Mobile Legends Account</b></h2>
+      <center>
+        <img src="image/Profil Mobile Legends.jpg" width="1000" align="center" alt="" />
+      </center>
+
+      <h3 align="center" style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><b>Nickname : Kang Bengkel Bubut</b></h3>
+      <h3 align="center" style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><b>Hero Signature : Fanny, Selena, Gusion, Ling, Hayabusa, Lancelot.</b></h3>
+      <h3 align="center" style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><b>Awal Main : Season 6</b></h3>
+    </section>
+    <br>
+    <h3 style="color: white;" align="center"><b>"Barangkali Mo Ngajak Mabar"</b></h3>
+        <form>
+          <label for="nama" style="color: white;">Nama :</label>
+          <input type="text" id="nama" name="nama" placeholder="Tulis aja namanya di sini">
+          <label for="usia" style="color: white;">Usia :</label>
+          <input type="text" id="usia" name="usia" placeholder="Pengen tau usiamu">
+          <label for="pesan" style="color: white;">Pesan :</label>
+          <input type="text" id="pesan" name="pesan" placeholder="Terserah aja deh bebas">
+          <input type="submit" value="Submit">
+        </form>
+    <!-- Akhir My Profile Account -->
+
+    <!-- Footer -->
+
+    <footer>
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        <b>Created by :</b><br />
+        <a href="https://www.instagram.com/fahmian_/" style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Fahmi Arifiansyah</a>
+      </p>
+    </footer>
+    <!-- Akhir Footer -->
+  </body>
+</html>
